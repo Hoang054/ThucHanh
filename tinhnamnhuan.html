@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nam=prompt("Nhap so nam:");
+        let ketqua=false;
+        if(nam%4==0){
+            if(nam%100==0){
+                if(nam%400==0){
+                    ketqua=true;
+                }else{
+                ketqua=false;}
+            }else{
+            ketqua=true;}
+        }
+        if(ketqua==true){
+            alert('la nam nhuan');
+        }else{
+            alert('khong la nam nhuan');
+        }
+    </script>
+</body>
+</html>
