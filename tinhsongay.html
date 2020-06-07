@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <input type="text" value="1" id="thang"><input type="submit" value="Tinh So Ngay" onclick="display()">
+    <div id="xuongdong"></div>
+    <script>
+        
+        function display() {
+            let thang1 = +document.getElementById("thang").value;
+            switch (thang1) {
+                case 1:
+                case 7:
+                case 8:
+                case 10:
+                case 12: {
+                    document.getElementById("xuongdong").innerHTML= "thang co 31 ngay";
+                    
+                    break;
+                }
+                case 2: {
+                    document.getElementById("xuongdong").innerHTML= "thang 2 co 28 hoac 29 ngay";
+                    break;
+                }
+                case 3:
+                 {
+                    document.getElementById('xuongdong').innerText= 'thang co 31 ngay';
+                    break;
+                }
+                case 4:
+                case 9:
+                case 6:
+                case 11: {
+                    document.getElementById('xuongdong').innerText= 'thang co 30 ngay';
+                    break;
+                }
+                case 5: {
+                    document.getElementById("xuongdong").innerText= "Thang 5 co 31 ngay";
+                    break;
+                }
+                default :{
+                    document.getElementById('xuongdong').innerHTML='khong co thang do'}
+            }
+        }
+    </script>
+</body>
+
+</html>

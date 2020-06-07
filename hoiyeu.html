@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Em Co Yeu Anh Khong?</h1>
+    <input type="button" value="Co" onclick="kinhco()">
+    <input id="k" style="position: relative;" type="button" value="Khong" onmouseover="dichuot()">
+
+</body>
+<script>
+    function kinhco(){
+        alert("em chon dung roi day")
+    }
+
+    function dichuot(){
+        let w= window.innerHeight;
+        let H = window.innerWidth;
+        let vitri1= document.getElementById('k');
+        
+
+        let randomw = Math.floor(Math.random() * w); 
+        let randomh = Math.floor(Math.random()*H);
+        document.getElementById('k').style.left = randomh+'px';
+        document.getElementById('k').style.top =  randomw + 'px';
+      
+    }
+</script>
+</html>

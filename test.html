@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var year= parseInt(prompt("nhap 1 nam"));
+        var lanamnhuan= false;
+
+        var lanamnhuan = year % 4;
+        if(lanamnhuan==0){
+            lanamnhuan=true;
+        }else{
+            lanamnhuan=false;
+        }
+        if(lanamnhuan){
+            alert(year +"la nam nhaun");
+        }
+        else{
+            alert("la nam k nhuan");
+        }
+    </script>
+    </body>
+</html>
